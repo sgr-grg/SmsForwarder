@@ -47,7 +47,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun chooseFile() {
         val intent = Intent(Intent.ACTION_GET_CONTENT)
-        intent.addCategory(Intent.CATEGORY_OPENABLE)
+        intent.addCategory(Intent.C
+                ATEGORY_OPENABLE)
         intent.type = "*/*"
         intent.addFlags(Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION)
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
